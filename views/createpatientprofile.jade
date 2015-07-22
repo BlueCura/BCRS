@@ -1,0 +1,30 @@
+doctype html
+html
+  h1 Create your Patient profile here! Our goal is to make your life easier!
+  b
+    | Fill out the form below
+    form(method='POST')
+      | First name: 
+      input(type='text', name='fname')
+      br
+      |         Last name: 
+      input(type='text', name='lname')
+      br
+      |         Username: 
+      input(type='text', name='user_name')
+      br
+      |         Password: 
+      input(type='text', name='pass_word')
+      br
+      |         Role: 
+      br
+      input(type='radio', name='Patient')
+      |  Patient 
+      br
+      input(type='radio', name='Relative')
+      |  Relative 
+      br
+      |         Email: 
+      input(type='text', name='email')
+      br
+      input(type='submit', value='Submit')

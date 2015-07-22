@@ -1,0 +1,17 @@
+CREATE TABLE Relatives
+(
+	ID int NOT NULL AUTO_INCREMENT,
+	FirstName varchar(255) NOT NULL,
+	LastName varchar(255) NOT NULL,
+	UserName varchar(255) NOT NULL UNIQUE,
+	Password varchar(255) NOT NULL UNIQUE,
+	Email varchar(255) NOT NULL UNIQUE,
+	CellPhone varchar(255) NOT NULL UNIQUE,
+	Address varchar(255),
+	City varchar(255),
+	ZipCode varchar(255),
+	PatientID int(11),
+	PRIMARY KEY(ID),
+	FOREIGN KEY(PatientID) REFERENCES Patients(ID)
+
+);
